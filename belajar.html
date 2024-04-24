@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="gambar" href="gambar/logo.jpg" sizes="16x16" />
+    <title>Belajar Lebih Lanjut | Jadikoding</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .materi-list {
+            list-style: none;
+            padding: 0;
+            padding-right: 500px;
+            margin-top: 20px; /* Jarak antara paragraf dan list */
+        }
+
+        .materi-list li {
+            margin-bottom: 20px;
+            position: relative;
+            padding-left: 40px;
+        }
+
+        .materi-list li::before {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #3498db; /* Warna bubble */
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .materi-list li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href=''>Jadikoding</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Product</a></li>
+                    <li><a href="index.html">Partners</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                    <li><a id="loginLink" href="login.html" class="tbl-pink">Masuk</a></li>
+                    <li id="registerListItem"><a id="registerLink" href="register.html" class="tbl-biru">Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <section id="belajar">
+            <ul class="materi-list">
+                <li><a href="materi1.html" target="_self">Materi 1 (Pengertian HTML dan sejarahnya)</a></li>
+                <li><a href="materi2.html" target="_self">Materi 2 (Pengantar HTML)</a></li>
+                <li><a href="materi3.html" target="_self">Materi 3 (HTML5 ADVANCED)</a></li>
+        </section>
+    </div>
+
+    <div id="contact">
+        <div class="wrapper">
+            <div class="footer">
+                <div class="footer-section">
+                    <h3>About</h3>
+                    <p>Jadikoding adalah platform belajar yang didirikan oleh 3 anak muda pada tahun 2024. Setelah banyak mengikuti berbagai pengalaman organisasi, pendidikan di kampus dan kerja . Para founder merasa bahwa Indonesia memiliki potensi yang sangat besar untuk semakin maju di bidang teknologi mengingat pertumbuhan startup IT yang sangat pesat di beberapa tahun silam..</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p><img src="gambar/location.png" alt="Lokasi">Jl.Serayu No.84 Kota Madiun </p>
+                    <p><img src="gambar/email.png" alt="Kode Pos"> Kode Pos: 63133</p>                    
+                    <p><img src="gambar/telephone.png" alt="No telp">(0351)452960</p>
+                    <p><img src="gambar/telephone.png" alt="No telp">(0351)452970</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Social</h3>
+                    <p><b><img src="gambar/youtube.png" alt="Youtube">YouTube: </b>Ngoding di Jadikoding</p>
+                    <p><b><img src="gambar/instagram.png" alt="Instagram">Instagram: </b>Jadikoding_id</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="copyright">
+        <div class="wrapper">
+            &copy; 2024. <b>Jadikoding.id</b> All Rights Reserved.
+        </div>
+    </div>
+
+    
+</body>
+
+</html>

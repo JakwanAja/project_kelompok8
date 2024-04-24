@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="gambar" href="gambar/logo.jpg" sizes="16x16" />
+    <title>Materi 1 | Jadikoding</title>
+    <style>
+        /* Tambahkan styling tambahan di sini */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .btn-back {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 18px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #3498db;
+            color: #fff;
+            border-radius: 50px;
+            transition: background-color 0.3s ease;
+        }
+        .btn-back:hover {
+            background-color: #2980b9;
+        }
+        .btn-back:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: inherit;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+        .btn-back:hover:before {
+            opacity: 1;
+        }
+        
+        section {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        article {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #3498db;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href=''>Jadikoding</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Product</a></li>
+                    <li><a href="index.html">Partners</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                    <li><a id="loginLink" href="login.html" class="tbl-pink">Masuk</a></li>
+                    <li id="registerListItem"><a id="registerLink" href="register.html" class="tbl-biru">Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="wrapper">
+            <article>
+                <h2>Pengertian HTML (Hypertext Markup Language)</h2>
+                <p>
+                    HTML (Hypertext Markup Language) adalah bahasa markup standar yang digunakan untuk merancang dan membangun struktur serta tampilan konten pada dokumen web. Dengan HTML, pengembang web dapat menentukan bagaimana informasi pada halaman web harus terstruktur dan ditampilkan kepada pengguna. Dokumen HTML terdiri dari elemen-elemen, tag, dan atribut yang memberikan petunjuk kepada browser tentang cara mengorganisasi dan menampilkan kontennya.
+                </p>
+                <div class="gallery">
+                    <img src="gambar/html.jpg" alt="Struktur HTML 1">
+                </div>
+            </article>
+    
+            <article>
+                <h2>Sejarah HTML</h2>
+                <p>
+                    HTML pertama kali diciptakan oleh fisikawan Inggris, Tim Berners-Lee, sebagai bagian dari proyek World Wide Web (WWW) di CERN (European Organization for Nuclear Research) pada tahun 1991. Sejak itu, HTML telah mengalami evolusi melalui berbagai versi seperti HTML 1.0, HTML 2.0, HTML 3.2, HTML 4.01, dan XHTML.
+                </p>
+                <p>
+                    Pada tahun 2014, HTML mencapai versi terbaru, yaitu HTML5. HTML5 terus diperbarui oleh World Wide Web Consortium (W3C) dan Web Hypertext Application Technology Working Group (WHATWG). HTML5 mendukung berbagai fitur, termasuk multimedia, grafik, dan pengembangan aplikasi web yang lebih kompleks. Seiring perkembangannya, HTML terus menyediakan kemampuan untuk membuat situs web yang interaktif, responsif, dan kaya konten.
+                </p>
+                <div class="gallery">
+                    <img src="gambar/html_history.png" alt="Evolusi HTML 1">
+  
+                </div>
+            </article>
+        </div>
+    </section>
+    
+    <div class="wrapper">
+        <a href="belajar.html" class="btn-back">Kembali ke List Materi</a>
+        <a href="materi2.html" class="btn-back">Materi Selanjutnya</a>
+    </div>
+
+    <div id="contact">
+        <div class="wrapper">
+            <div class="footer">
+                <div class="footer-section">
+                    <h3>About</h3>
+                    <p>Jadikoding adalah platform belajar yang didirikan oleh 3 anak muda pada tahun 2024. Setelah banyak mengikuti berbagai pengalaman organisasi, pendidikan di kampus dan kerja . Para founder merasa bahwa Indonesia memiliki potensi yang sangat besar untuk semakin maju di bidang teknologi mengingat pertumbuhan startup IT yang sangat pesat di beberapa tahun silam..</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p><img src="gambar/location.png" alt="Lokasi">Jl.Serayu No.84 Kota Madiun </p>
+                    <p><img src="gambar/email.png" alt="Kode Pos"> Kode Pos: 63133</p>                    
+                    <p><img src="gambar/telephone.png" alt="No telp">(0351)452960</p>
+                    <p><img src="gambar/telephone.png" alt="No telp">(0351)452970</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Social</h3>
+                    <p><b><img src="gambar/youtube.png" alt="Youtube">YouTube: </b>Ngoding di Jadikoding</p>
+                    <p><b><img src="gambar/instagram.png" alt="Instagram">Instagram: </b>Jadikoding_id</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="copyright">
+        <div class="wrapper">
+            &copy; 2024. <b>Jadikoding.id</b> All Rights Reserved.
+        </div>
+    </div>
+
+</body>
+
+</html>

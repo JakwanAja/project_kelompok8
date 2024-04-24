@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="gambar" href="gambar/logo.jpg" sizes="16x16" />
+    <title>Materi 2 | Jadikoding</title>
+    <link rel="stylesheet" href="css/style.css" >
+    <style>
+        /* Tambahkan styling tambahan di sini */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .btn-back {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 18px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #3498db;
+            color: #fff;
+            border-radius: 50px;
+            transition: background-color 0.3s ease;
+        }
+        .btn-back:hover {
+            background-color: #2980b9;
+        }
+        .btn-back:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: inherit;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+        .btn-back:hover:before {
+            opacity: 1;
+        }
+        
+        section {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        article {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #3498db;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href=''>Jadikoding</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Product</a></li>
+                    <li><a href="index.html">Partners</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                    <li><a id="loginLink" href="login.html" class="tbl-pink">Masuk</a></li>
+                    <li id="registerListItem"><a id="registerLink" href="register.html" class="tbl-biru">Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <article>
+            <h2>Pengantar HTML</h2>
+            <p>
+                HTML adalah bahasa markah yang digunakan untuk membuat struktur dan konten sebuah halaman web. Eksekusi HTML terjadi di browser, sementara pengeditan biasanya dilakukan melalui program editor. HTML memiliki berbagai fungsi, termasuk membuat tampilan yang menarik dengan kemampuan untuk menyisipkan gambar, audio, video, dan script Java applet. Selain itu, HTML juga memungkinkan pembuatan formulir online untuk interaksi pengguna.
+            </p>
+            <h2>Elemen Dasar HTML</h2>
+            <p>
+                Berikut adalah ringkasan elemen dasar HTML:
+            </p>
+            <ul class="html-elements">
+                <li><code>&lt;!DOCTYPE html&gt;</code>: Deklarasi jenis dokumen HTML.</li>
+                <li><code>&lt;html&gt;</code>: Elemen utama yang memuat seluruh konten.</li>
+                <li><code>&lt;head&gt;</code>: Informasi tambahan seperti judul dan meta.</li>
+                <li><code>&lt;title&gt;</code>: Judul halaman yang ditampilkan di tab browser.</li>
+                <li><code>&lt;body&gt;</code>: Konten aktual halaman web.</li>
+                <li><code>&lt;h1&gt;</code> hingga <code>&lt;h6&gt;</code>: Heading atau judul dengan tingkatan yang berbeda.</li>
+                <li><code>&lt;p&gt;</code>: Paragraf teks.</li>
+                <li><code>&lt;a&gt;</code>: Tautan atau hyperlink ke halaman lain.</li>
+                <li><code>&lt;img&gt;</code>: Menyisipkan gambar.</li>
+                <li><code>&lt;ul&gt;</code> dan <code>&lt;ol&gt;</code>: Daftar tak-berurutan dan berurutan.</li>
+                <li><code>&lt;li&gt;</code>: Item dalam daftar.</li>
+                <li><code>&lt;table&gt;</code>: Membuat tabel.</li>
+                <li><code>&lt;tr&gt;</code>: Baris dalam tabel.</li>
+                <li><code>&lt;td&gt;</code>: Sel data dalam tabel.</li>
+                <li><code>&lt;th&gt;</code>: Sel header dalam tabel.</li>
+                <li><code>&lt;form&gt;</code>: Membuat formulir.</li>
+                <li><code>&lt;input&gt;</code>: Kontrol input dalam formulir.</li>
+            </ul>
+        </article>
+    </section>
+    
+    <div class="wrapper">
+        <a href="belajar.html" class="btn-back">Kembali ke List Materi</a>
+        <a href="materi3.html" class="btn-back">Materi Selanjutnya</a>
+    </div>
+    <div id="contact">
+        <div class="wrapper">
+            <div class="footer">
+                <div class="footer-section">
+                    <h3>About</h3>
+                    <p>Jadikoding adalah platform belajar yang didirikan oleh 3 anak muda pada tahun 2024. Setelah banyak mengikuti berbagai pengalaman organisasi, pendidikan di kampus dan kerja . Para founder merasa bahwa Indonesia memiliki potensi yang sangat besar untuk semakin maju di bidang teknologi mengingat pertumbuhan startup IT yang sangat pesat di beberapa tahun silam..</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p><img src="gambar/location.png" alt="Lokasi">Jl.Serayu No.84 Kota Madiun </p>
+                    <p><img src="gambar/email.png" alt="Kode Pos"> Kode Pos: 63133</p>                    
+                    <p><img src="gambar/telephone.png" alt="No telp">(0351)452960</p>
+                    <p><img src="gambar/telephone.png" alt="No telp">(0351)452970</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Social</h3>
+                    <p><b><img src="gambar/youtube.png" alt="Youtube">YouTube: </b>Ngoding di Jadikoding</p>
+                    <p><b><img src="gambar/instagram.png" alt="Instagram">Instagram: </b>Jadikoding_id</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="copyright">
+        <div class="wrapper">
+            &copy; 2024. <b>Jadikoding.id</b> All Rights Reserved.
+        </div>
+    </div>
+
+    
+</body>
+
+</html>

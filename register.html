@@ -6,68 +6,9 @@
     <link rel="icon" type="gambar" href="gambar/logo.jpg" sizes="16x16" />
     <title>Register - Ngoding di Jadikoding</title>
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        body {
-            background: linear-gradient(#B1D4E0, #fc5185);
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
-        
-        .wrapper {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        
-        .register-form {
-            max-width: 400px;
-            width: 100%;
-            background-color: #fff;
-            padding: 20px;
-            margin-top: 100px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        
-        .register-form h2 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        
-        .form-group {
-            margin-bottom: 15px;
-        }
-        
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-        }
-        
-        .form-group input {
-            width: 100%;
-            padding: 10px;
-            font-size: 16px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-        
-        .register-form button {
-            width: 100%;
-            padding: 10px;
-            font-size: 16px;
-            background-color: #24243e;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .register-form button:hover {
-            background-color: #2980b9;
-        }
-    </style>
+    <link rel="stylesheet" href="css/styleregister.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+ 
 </head>
 <body>
     <div class="wrapper">
@@ -93,26 +34,24 @@
     </div>
 
     <script>
-      document.getElementById("registerForm").addEventListener("submit", function(event) {
-            event.preventDefault(); // Prevent form submission
-            
+        document.getElementById("registerForm").addEventListener("submit", function(event) {
+            event.preventDefault(); 
+
             var username = document.getElementById("username").value;
             var password = document.getElementById("password").value;
 
             localStorage.setItem("username", username);
             localStorage.setItem("password", password);
 
-            alert("Registrasi berhasil! Silakan login.");
-            window.location.href = "login.html";
+            Swal.fire({
+                icon: 'success',
+                title: 'Registrasi Berhasil!',
+                text: 'Silakan login dengan akun yang telah didaftarkan.',
+                confirmButtonText: 'OK'
+            }).then(() => {
+                window.location.href = "login.html";
+            });
         });
-
-        window.onload = function() {
-            if (window.location.search.includes('registered')) {
-                alert('Registrasi berhasil! Silakan login.');
-                window.location.href = 'login.html';
-            }
-        };
     </script>
 </body>
 </html>
-

@@ -6,81 +6,9 @@
     <link rel="icon" type="gambar" href="gambar/logo.jpg" sizes="16x16" />
     <title>Login - Ngoding di Jadikoding</title>
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        body {
-            background: linear-gradient(#B1D4E0, #fc5185);
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
-        
-        .wrapper {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        
-        .login-form {
-            max-width: 400px;
-            width: 100%;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        
-        .login-form h2 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        
-        .form-group {
-            margin-bottom: 15px;
-        }
-        
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-        }
-        
-        .form-group input {
-            width: 100%;
-            padding: 10px;
-            font-size: 16px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-        
-        .login-form button {
-            width: 100%;
-            padding: 10px;
-            font-size: 16px;
-            background-color: #24243e;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-bottom: 10px; /* Added margin to separate from next element */
-        }
+    <link rel="stylesheet" href="css/stylelogin.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-        .login-form button:hover {
-            background-color: #2980b9;
-        }
-
-        /* Responsiveness */
-        @media screen and (max-width: 768px) {
-            .login-form {
-                max-width: 300px;
-            }
-        }
-
-        @media screen and (max-width: 480px) {
-            .login-form {
-                max-width: 250px;
-            }
-        }
-    </style>
 </head>
 <body>
     <div class="wrapper">
@@ -102,12 +30,6 @@
     </div>
 
     <script>
-        window.onload = function() {
-            if (window.location.search.includes('registered')) {
-                alert('Registrasi berhasil! Silakan login.');
-            }
-        };
-
         document.getElementById("loginForm").addEventListener("submit", function(event) {
             event.preventDefault(); 
             var username = document.getElementById("username").value;
@@ -119,7 +41,11 @@
             if (username === storedUsername && password === storedPassword) {
                 window.location.href = "index.html";
             } else {
-                alert("Username atau password salah. Silakan coba lagi.");
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Login Gagal',
+                    text: 'Username atau password salah. Silakan coba lagi.',
+                });
             }
         });
     </script>

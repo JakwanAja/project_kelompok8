@@ -1,17 +1,36 @@
-----> Tentang Jadikoding :
+# Nama Aplikasi
+> Membuat website yang menyediakan kursus berbasis online 
+Jadikoding adalah sebuah platform yang menyediakan
 
-Jadikoding didirikan oleh 3 Mahasiswa dari Prodi Teknologi Rekayasa Perangkat Lunak (TRPL) Politeknik Negeri Madiun tahun 2024.
-Jadikoding adalah platform belajar online /kursus dibidang programming web, mobile, dan database.
-Platform ini berisi berbagai macam kursus untuk belajar dan mengasah skillcprogramming.
-Tersedia banyak kelas yang tersedia di platform Jadikoding, mulai dari kelas begginer uhingga advance.
+## featur
+Sprint1 = Login logout
+* Fitur login logout 
+* 
+* 
+Sprint 2
+* ......
+
+## Keterangan Folder
+> 1. gambar = Folder ini berisi semua resource berupa gambar .jpg dan .png 
+> 2. css = Folder ini berisi file styles.css yang berfungsi untuk mengedit tampilan dan tata letak element-element HTML
+> 3. js =
 
 
-Founder Jadikoding :  
-1. Aditya Dimas Saputra (234311003)
-2. Muhamad Dzakwan Alfaris (234311019)
-3. Salva Mahardhika Pratama (234311026)
 
-Referensi Untuk keperluan Pengembangan :
-https://www.dicoding.com/
-https://codingstudio.id/
-https://jadihacker.id/
+### Requirements
+
+* node 8+
+* php 7+
+* composer 1.9+
+* yarn 1.13+ _or npm 6.4+_
+
+### Installation
+> cara instalasi
+
+## [Usage](#usage)
+> 
+
+
+## [Configuration](#configuration)
+> konfigurasi yang dibutuhkan jika ada
+

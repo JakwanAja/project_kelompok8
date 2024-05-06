@@ -1,3 +1,4 @@
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -109,7 +110,7 @@
         </section>
     </div>
 
-    <div id="contact">
+    <div id="footer">
         <div class="wrapper">
             <div class="footer">
                 <div class="footer-section">
@@ -155,3 +156,4 @@
     </script>
 </body>
 </html>
+?>
